@@ -1,5 +1,6 @@
 var xJOS = 225;
 var yJOS = 375;
+var speeeeeeed = 17;
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -8,15 +9,15 @@ function setup() {
   textSize(14);
   frameRate(20);
 }
-
-function draw() {
+function draw(){
   background('lavender');
   fill('black');
   // yJOS--;
-
+  speeeeeeed-=0.5
+  yJOS-=speeeeeeed
   xJOS=constrain(xJOS,75,width-75);
   yJOS=constrain(yJOS,75,height-75);
-  text("x = " + round(xJOS) + " y = " + yJOS,10,20);
+  text("x = " + round(xJOS) + " y = " + round(yJOS) + " speeeeeeeeeeeeed = " + speeeeeeed,10,20);
   
   translate(xJOS,yJOS);
 

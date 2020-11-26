@@ -1,4 +1,4 @@
-var xJOS = 225;
+var xJOS = 10;
 var yJOS = 75;
 
 function setup() {
@@ -14,6 +14,10 @@ function draw() {
   background('lavender');
   text("x = " + round(xJOS),10,20);
   tekenJos(xJOS,yJOS);
+    tekenJos(xJOS,225);
+      tekenJos(xJOS,400);
+xJOS+=0.05
+xJOS = constrain(xJOS,0,width-25,);
 }
 
 function tekenJos(x,y) {
