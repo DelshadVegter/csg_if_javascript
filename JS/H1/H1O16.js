@@ -11,11 +11,11 @@ function setup() {
 function draw() {
   background(255,255,255,1);
   fill(255,0,0,0.5);
-  Y1+=5;
-  Y2-=5;
+  Y1+=2;
+  Y2-=2;
   ellipse(width / 2,height / 2,diameter);
-
+  fill(0,255,0,0.5);
     ellipse(width / 2,Y1,diameter);
-
+  fill(0,0,255,0.5);
       ellipse(width / 2,Y2,diameter);
 }
