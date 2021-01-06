@@ -16,7 +16,7 @@ function draw() {
   tekenJos(xJOS,yJOS);
     tekenJos(xJOS,225);
       tekenJos(xJOS,400);
-xJOS+=0.05
+xJOS+=3
 xJOS = constrain(xJOS,0,width-25,);
 }
 

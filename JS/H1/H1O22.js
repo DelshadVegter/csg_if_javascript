@@ -11,20 +11,17 @@ function setup() {
 }
 
 function draw() {
-  background('lavender');
-  fill('black');  
+  if (mouseX <= width / 2) {
+    background('yellow');
+  }
+  else {
+    background('red');
+  }
   
   mouseX=constrain(mouseX,25,width - 25);
   mouseY=constrain(mouseY,25,height - 25);
 
   text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
-  
-  if (mouseX >= width - 30) {
-    kleur='red';
-  }
-  else {
-    kleur='indianred';
-  }
   
   ellipse(width / 2,height / 2,100);
   tekenJos(mouseX,mouseY,kleur);
