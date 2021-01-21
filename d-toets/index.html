@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>-->
+	<script src="p5.min.js"></script>
+    
+<script>
+  const AFSTAND = 25;
+  
+function setup() {
+  var myCanvas = createCanvas(1000, 500);
+  background('#b20700');
+  myCanvas.parent('mijnDiv');
+}
+
+function draw() {
+  translate(50,100);
+  tekenEnv();
+}
+  
+function tekenEnv() {
+  rect(0,0,200,200);
+  triangle(0,0,200,0,100,100);
+}
+
+</script>
+  </head>
+  <body>
+    <!-- Javascript plaatst alles in onderstaande div -->
+    <div id='mijnDiv'></div>
+  </body>
+</html>
